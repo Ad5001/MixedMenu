@@ -77,11 +77,4 @@ Item {
     function toggle(){
         root.trueItem.toggle()
     }
-    
-    /*!
-        \qmlmethod void Action::addShortcut(keysequence sequence, var trigger)
-        
-    */
-    function addShortcut(sequence, trigger) {
-    }
 }
