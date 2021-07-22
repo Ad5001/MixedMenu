@@ -42,9 +42,7 @@ Item {
     property alias enabled: controlsAction.enabled
     property alias shortcut: controlsAction.shortcut
     property alias text: controlsAction.text
-    property alias iconName: controlsAction.icon.name
-    property alias iconSource: controlsAction.icon.source
-    property alias iconColor: controlsAction.icon.color
+    property alias icon: controlsAction.icon
     
     Native.MenuItem {
         id: nativeAction
@@ -65,7 +63,6 @@ Item {
     Component.onCompleted: {
         // Forwarding to MenuBar. Little hack to make Action shortcuts work properly, because otherwise, they would not trigger
         if(shortcut != 0) {
-            console.log("Adding shortcut for", text, "with shortcut", shortcut)
             parent.parent.addShortcut(shortcut, root.triggered)
         }
     }

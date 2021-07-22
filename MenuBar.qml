@@ -95,6 +95,5 @@ Item {
         }`, root, "shortcut" + sequence);
         newShortcut.sequence = sequence
         newShortcut.activated.connect(trigger)
-        console.log("Added shortcut " + sequence)
     }
 }

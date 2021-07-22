@@ -42,9 +42,7 @@ Item {
     property bool enabled: true
     property font font: trueItem.font
     property string text: ""
-    property alias iconName: controlsMenuItem.icon.name
-    property alias iconSource: controlsMenuItem.icon.source
-    property alias iconColor: controlsMenuItem.icon.color
+    property alias icon: controlsMenuItem.icon
     
     Native.MenuItem {
         id: nativeMenuItem
