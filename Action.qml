@@ -62,6 +62,14 @@ Item {
         onToggled: root.toggled()
     }
     
+    Component.onCompleted: {
+        // Forwarding to MenuBar. Little hack to make Action shortcuts work properly, because otherwise, they would not trigger
+        if(shortcut != 0) {
+            console.log("Adding shortcut for", text, "with shortcut", shortcut)
+            parent.parent.addShortcut(shortcut, root.triggered)
+        }
+    }
+    
     /*!
         \qmlmethod void Action::toggle()
         Toggles the \c checked state to its opposite state.
@@ -70,4 +78,10 @@ Item {
         root.trueItem.toggle()
     }
     
+    /*!
+        \qmlmethod void Action::addShortcut(keysequence sequence, var trigger)
+        
+    */
+    function addShortcut(sequence, trigger) {
+    }
 }

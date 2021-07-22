@@ -82,4 +82,19 @@ Item {
     function clear(){
         root.trueItem.clear()
     }
+    
+    /*!
+        \qmlmethod void MenuBar::addShortcut(keysequence sequence, var trigger)
+        Little hack to make Action shortcuts work properly.
+    */
+    function addShortcut(sequence, trigger) {
+        var newShortcut = Qt.createQmlObject(`
+        import QtQuick 2.12; 
+        Shortcut {
+            context: Qt.ApplicationShortcut
+        }`, root, "shortcut" + sequence);
+        newShortcut.sequence = sequence
+        newShortcut.activated.connect(trigger)
+        console.log("Added shortcut " + sequence)
+    }
 }

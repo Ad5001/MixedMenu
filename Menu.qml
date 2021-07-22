@@ -192,4 +192,13 @@ Item {
             controlsMenu.popup()
         }
     }
+    
+    /*!
+        \qmlmethod void Menu::addShortcut(keysequence sequence, var trigger)
+        Forwarding to MenuBar. Little hack to make Action shortcuts work properly, because otherwise, they would not trigger
+        \sa MenuBar::addShortcut
+    */
+    function addShortcut(sequence, trigger) {
+        parent.parent.addShortcut(sequence, trigger)
+    }
 }
