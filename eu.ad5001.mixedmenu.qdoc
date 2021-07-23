@@ -17,7 +17,7 @@
  */
  
 /*!
-    \qmlmodule eu.ad5001.MixedMenu 1.0
+    \qmlmodule eu.ad5001.MixedMenu 1.1
     \title MixedMenu QML Module
     \brief Provides a near drop-in replacements for QtQuick.Controls menus allowing to use the platform native ones on supported platforms.
     
