@@ -1,6 +1,6 @@
 module eu.ad5001.MixedMenu
-MenuBar 1.0 MenuBar.qml
-MenuItem 1.0 MenuItem.qml
-Action 1.0 Action.qml
-Menu 1.0 Menu.qml
-MenuSeparator 1.0 MenuSeparator.qml
+MenuBar 1.1 MenuBar.qml
+MenuItem 1.1 MenuItem.qml
+Action 1.1 Action.qml
+Menu 1.1 Menu.qml
+MenuSeparator 1.1 MenuSeparator.qml

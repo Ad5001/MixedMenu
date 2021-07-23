@@ -23,7 +23,7 @@ When switching from QtQuick.Controls 2 to MixedMenu, the following changes need 
 
 |QtQuick.Controls2/Qt.labs            | > |eu.ad5001.MixedMenu                                     |
 |-------------------------------------|---|--------------------------------------------------------|
-|`import import QtQuick.Controls 2.12`| > |`import eu.ad5001.MixedMenu 1.0`                        |
+|`import import QtQuick.Controls 2.12`| > |`import eu.ad5001.MixedMenu 1.1`                        |
 |`menuBar: MenuBar {}`                | > |`MenuBar { id: appMenu }`<br>`menuBar: appMenu.trueItem`|
 
 
