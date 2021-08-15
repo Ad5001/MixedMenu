@@ -62,7 +62,7 @@ Item {
     
     Component.onCompleted: {
         // Forwarding to MenuBar. Little hack to make Action shortcuts work properly, because otherwise, they would not trigger
-        if(shortcut != 0) {
+        if(shortcut != 0 && shortcut != undefined) {
             parent.parent.addShortcut(shortcut, root.triggered)
         }
     }
